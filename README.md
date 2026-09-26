@@ -8,6 +8,11 @@ This static website completes the Flexbox and CSS Grid tasks in Assignment 2. Ta
 - Task 3: `gallery.html` / `gallery.css` — nine local images in a three-column grid with caption overlays on hover and keyboard focus.
 - Task 4: `portfolio.html` / `portfolio.css` — Flexbox navigation, a two-column Grid main section, and Flexbox project cards.
 
+## Links
+
+- [Live website](https://mikosh001.github.io/WEB-Technologies-Assignment-2/)
+- [GitHub repository](https://github.com/Mikosh001/WEB-Technologies-Assignment-2)
+
 ## Run locally
 
 Open `index.html` in a web browser. No build step, dependencies, or server are required. Use the navbar to visit the other pages.
