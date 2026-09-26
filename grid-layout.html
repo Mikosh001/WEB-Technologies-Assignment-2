@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Areas Layout | Advanced CSS Assignment</title>
+  <link rel="stylesheet" href="grid-layout.css">
+</head>
+<body>
+  <div class="grid-page">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Layout Lab</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Cards</a></li>
+            <li><a href="grid-layout.html" aria-current="page">Grid Layout</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="grid-sidebar" aria-label="Page sidebar">
+      <h2>Sidebar</h2>
+      <nav class="sidebar-nav" aria-label="Page sections">
+        <a href="#overview">Overview</a>
+        <a href="#structure">Structure</a>
+        <a href="#responsive">Responsive layout</a>
+      </nav>
+    </aside>
+
+    <main class="grid-main">
+      <p class="eyebrow">Task 2 · Grid System</p>
+      <h1>Page Layout with Grid Areas</h1>
+      <section id="overview">
+        <h2>Main content</h2>
+        <p>This page places its header, sidebar, main content, and footer in named CSS Grid areas.</p>
+      </section>
+      <section id="structure">
+        <h2>Structure</h2>
+        <p>The header and footer span both columns. The sidebar occupies the left column and the main content occupies the right column.</p>
+      </section>
+      <section id="responsive">
+        <h2>Responsive layout</h2>
+        <p>On narrow screens, the grid changes to one column and the four areas stack vertically.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Advanced CSS Assignment · Berdibek Meiirbek</div>
+    </footer>
+  </div>
+</body>
+</html>

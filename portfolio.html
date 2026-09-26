@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Advanced CSS Assignment</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="portfolio-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Layout Lab</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Cards</a></li>
+            <li><a href="grid-layout.html">Grid Layout</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container portfolio-main">
+      <section class="projects" aria-labelledby="projects-heading">
+        <p class="eyebrow">Task 4 · Flexbox and Grid</p>
+        <h1 id="projects-heading">Portfolio Projects</h1>
+        <div class="project-list">
+          <article class="project-card">
+            <h2>Flexbox Card Row</h2>
+            <p>Three cards share a row, keep equal height, and respond to hover.</p>
+            <form class="project-action" action="index.html">
+              <button class="button" type="submit">View project</button>
+            </form>
+          </article>
+          <article class="project-card">
+            <h2>Grid Areas Layout</h2>
+            <p>A header, sidebar, main section, and footer use named grid areas.</p>
+            <form class="project-action" action="grid-layout.html">
+              <button class="button" type="submit">View project</button>
+            </form>
+          </article>
+          <article class="project-card">
+            <h2>Image Gallery</h2>
+            <p>Nine photographs form an equal-column grid with caption overlays.</p>
+            <form class="project-action" action="gallery.html">
+              <button class="button" type="submit">View project</button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <aside class="portfolio-info" aria-label="Portfolio information">
+        <h2>About</h2>
+        <p>Berdibek Meiirbek</p>
+        <p>Software Engineering student</p>
+        <p>From Mangystau, Kazakhstan</p>
+        <h2>Techniques</h2>
+        <ul>
+          <li>Flexbox navigation</li>
+          <li>CSS Grid page layout</li>
+          <li>Flexbox project cards</li>
+          <li>Responsive media queries</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Advanced CSS Assignment · Berdibek Meiirbek</div>
+    </footer>
+  </div>
+</body>
+</html>

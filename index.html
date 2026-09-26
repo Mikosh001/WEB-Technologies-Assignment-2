@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Card Row | Advanced CSS Assignment</title>
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Layout Lab</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" aria-current="page">Cards</a></li>
+            <li><a href="grid-layout.html">Grid Layout</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-main">
+      <div class="page-heading">
+        <p class="eyebrow">Task 1 · Flexbox</p>
+        <h1>Card Row</h1>
+        <p>Three equal-height cards featuring Aktau and Mangystau.</p>
+      </div>
+
+      <section class="card-row" aria-label="Featured photos">
+        <article class="feature-card">
+          <img src="images/gallery-1.jpg" alt="Sun setting over the Caspian Sea in Aktau">
+          <div class="card-content">
+            <h2>Aktau Sunset</h2>
+            <p>The sun sets over the Caspian Sea in Aktau, my home region.</p>
+            <form class="card-action" action="gallery.html#photo-1">
+              <button class="button" type="submit">View in gallery</button>
+            </form>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <img src="images/gallery-4.jpg" alt="White rock formations in Bozzhyra Valley, Mangystau">
+          <div class="card-content">
+            <h2>Bozzhyra Valley</h2>
+            <p>White cliffs and rock formations make Bozzhyra a striking Mangystau landmark.</p>
+            <form class="card-action" action="gallery.html#photo-4">
+              <button class="button" type="submit">View in gallery</button>
+            </form>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <img src="images/gallery-5.jpg" alt="Sherkala Mountain in Mangystau">
+          <div class="card-content">
+            <h2>Sherkala Mountain</h2>
+            <p>Sherkala Mountain rises above the open landscape of Mangystau.</p>
+            <form class="card-action" action="gallery.html#photo-5">
+              <button class="button" type="submit">View in gallery</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">Advanced CSS Assignment · Berdibek Meiirbek</div>
+    </footer>
+  </div>
+</body>
+</html>

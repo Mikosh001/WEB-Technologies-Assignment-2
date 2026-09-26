@@ -1,0 +1,232 @@
+:root {
+  color-scheme: light;
+  --ink: #18324d;
+  --muted: #52677d;
+  --blue: #1765a8;
+  --blue-dark: #0e4e85;
+  --surface: #ffffff;
+  --page: #f4f7fb;
+  --border: #dce5ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--page);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 3px solid #f6a83b;
+  outline-offset: 3px;
+}
+
+.container,
+.header-inner {
+  width: min(100% - 40px, 1100px);
+  margin-inline: auto;
+}
+
+.portfolio-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Task 0: Flexbox navigation */
+.site-header {
+  background: #10283e;
+  color: #fff;
+}
+
+.header-inner {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  padding: 9px 12px;
+  border-radius: 6px;
+  color: #e8f0f7;
+  text-decoration: none;
+  font-size: 0.94rem;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: #275a83;
+  color: #fff;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.22rem;
+  line-height: 1.3;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 160ms ease;
+}
+
+.button:hover {
+  background: var(--blue-dark);
+}
+
+.site-footer {
+  padding: 20px 0;
+  background: #10283e;
+  color: #e8f0f7;
+  font-size: 0.9rem;
+}
+
+/* Task 4: Grid page body and Flexbox project cards */
+.portfolio-main {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  align-items: start;
+  gap: 28px;
+  padding-block: 48px 64px;
+}
+
+.projects h1 {
+  margin-bottom: 24px;
+}
+
+.project-list {
+  display: grid;
+  gap: 16px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 178px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.project-card h2 {
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  flex: 1;
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.portfolio-info {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.portfolio-info h2:not(:first-child) {
+  margin-top: 30px;
+}
+
+.portfolio-info p {
+  margin-bottom: 6px;
+}
+
+.portfolio-info ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.portfolio-info li + li {
+  margin-top: 8px;
+}
+
+
+.project-action {
+  margin: auto 0 0;
+}
+@media (max-width: 680px) {
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 18px;
+  }
+  .nav-links { gap: 4px; }
+  .site-nav a { padding: 8px; }
+}
+@media (max-width: 680px) {
+  .portfolio-main { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button, .site-nav a { transition: none; }
+}
