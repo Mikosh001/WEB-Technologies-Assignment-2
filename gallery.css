@@ -52,7 +52,6 @@ figure:focus-visible {
   grid-template-rows: auto 1fr auto;
 }
 
-/* Task 0: Flexbox navigation */
 .site-header {
   background: #10283e;
   color: #fff;
@@ -145,7 +144,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* Task 3: three-column, three-row image gallery */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
