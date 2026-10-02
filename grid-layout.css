@@ -40,7 +40,7 @@ a:focus-visible {
   margin-inline: auto;
 }
 
-/* Task 0: Flexbox navigation */
+
 .site-header {
   background: #10283e;
   color: #fff;
@@ -120,7 +120,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* Task 2: named Grid areas */
 .grid-page {
   min-height: 100vh;
   display: grid;
