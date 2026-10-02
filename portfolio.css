@@ -46,7 +46,7 @@ a:focus-visible {
   grid-template-rows: auto 1fr auto;
 }
 
-/* Task 0: Flexbox navigation */
+
 .site-header {
   background: #10283e;
   color: #fff;
@@ -145,7 +145,6 @@ h2 {
   font-size: 0.9rem;
 }
 
-/* Task 4: Grid page body and Flexbox project cards */
 .portfolio-main {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
